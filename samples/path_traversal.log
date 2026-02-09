@@ -1,0 +1,4 @@
+[ALERT] INBOUND TCP CONNECTION
+IP: 203.0.113.45
+PAYLOAD: "../../../../etc/passwd"
+USER_AGENT: 'curl/7.68.0'

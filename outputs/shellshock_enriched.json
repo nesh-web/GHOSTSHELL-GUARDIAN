@@ -1,0 +1,7 @@
+{
+  "intent": "Remote Code Execution via Shellshock Exploitation",
+  "mitre_technique": "T1190",
+  "severity": "High",
+  "reasoning": "The payload contains the specific function definition syntax '() { :;};' used to exploit the critical Shellshock vulnerability (CVE-2014-6271) in Bash. The attacker is attempting to execute arbitrary commands to download a malicious bot via 'wget'. While the vulnerability is older, the intent is full system compromise.",
+  "recommended_action": "Block source IP 41.90.12.77 immediately at the WAF/Firewall. Investigate web server access logs to see if the server returned a 200 OK status code, indicating potential success. Verify if the target system is patched against Shellshock; if unpatched or if logs show success, isolate the server and scan for the downloaded 'bot' file."
+}

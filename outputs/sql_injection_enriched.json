@@ -1,0 +1,7 @@
+{
+  "intent": "SQL Injection / Authentication Bypass",
+  "mitre_technique": "T1190 - Exploit Public-Facing Application",
+  "severity": "High",
+  "reasoning": "The payload is a distinct SQL injection signature (' OR '1'='1) intended to bypass authentication or extract data. The severity is High because the Source IP (192.168.10.5) is a private internal address, indicating a potentially compromised internal host attempting lateral movement or a malicious insider, rather than standard external scanning noise.",
+  "recommended_action": "Immediately isolate the source host (192.168.10.5) from the network. Analyze web server logs to verify if the attack was successful (look for HTTP 200 responses or abnormal data sizes). Investigate the source endpoint for malware, authorized vulnerability scanners, or unauthorized user activity."
+}

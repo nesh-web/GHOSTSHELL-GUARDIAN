@@ -1,0 +1,7 @@
+{
+  "intent": "Directory Traversal Attempt",
+  "mitre_technique": "T1190",
+  "severity": "High",
+  "reasoning": "The payload utilizes standard directory traversal syntax (../../) targeting the critical Linux system file /etc/passwd. The User-Agent (curl) suggests automated scanning or manual exploitation. Success would result in sensitive information disclosure facilitating user enumeration.",
+  "recommended_action": "Check the HTTP response code associated with this request; if 200 OK, escalate immediately as a confirmed breach. Block the source IP 203.0.113.45 on the WAF or Firewall. Review application input validation logic."
+}

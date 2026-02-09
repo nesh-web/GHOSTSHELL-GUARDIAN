@@ -1,0 +1,7 @@
+{
+  "intent": "Remote Code Execution",
+  "mitre_technique": "T1059.004",
+  "severity": "Critical",
+  "reasoning": "The payload utilizes a semicolon command separator followed by 'wget' piping output directly to 'sh'. This is a clear indicator of a Command Injection attack attempting to download and execute an arbitrary malicious script, which would result in full system compromise.",
+  "recommended_action": "Immediately block the source IP (198.51.100.23) at the firewall. Investigate web server logs to determine if the request returned a success status (HTTP 200) or if the server initiated an outbound connection to the malicious domain. If execution is confirmed, isolate the affected host and initiate incident response procedures."
+}
