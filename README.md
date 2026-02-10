@@ -15,7 +15,7 @@ Enterprise SOC teams face an unsustainable alert burden: thousands of security e
 
 ---
 
-## 🏆 Competitive Advantages
+##  Competitive Advantages
 
 ### Speed & Efficiency
 - **Real-time Processing**: Analyzes alerts in milliseconds (not hours)
@@ -33,7 +33,7 @@ Enterprise SOC teams face an unsustainable alert burden: thousands of security e
 - **No ML Model Overhead**: Fast inference without model loading latency
 - **Portable**: Works anywhere Python 3.12+ is available
 
-## 🔄 Technical Architecture Overview
+##  Technical Architecture Overview
 
 Ghost Shell Guardian implements a **sophisticated 4-layer pipeline** delivering threat intelligence through modular, independently-testable components:
 
@@ -56,7 +56,7 @@ Raw Security Log
 
 ---
 
-## ⚡ Deployment & Testing
+##  Deployment & Testing
 
 ### Environment Preparation (< 3 minutes)
 
@@ -245,7 +245,7 @@ Architectural principle: **System either succeeds completely or fails explicitly
 
 ---
 
-## 🏆 Competitive Advantages & Market Position
+##  Competitive Advantages & Market Position
 
 **Enterprise Relevance**
 SOC teams manage thousands of alerts daily with manual analysis bottlenecks. Ghost Shell Guardian delivers technological solution to a real, immediate problem.
@@ -268,7 +268,7 @@ JSON output enables integration with industry-standard SOC platforms (Splunk, EL
 
 ---
 
-## 🎤 Executive Summary (30 seconds)
+##  Executive Summary (30 seconds)
 
 **Ghost Shell Guardian** transforms SOC operations by automating expert-level threat analysis. Using Gemini 3 AI, the system instantly provides attack intent, risk severity, MITRE technique mapping, and specific incident response recommendations—enabling security teams to respond to critical threats **10x faster** while reducing analyst burnout.
 
@@ -276,7 +276,7 @@ JSON output enables integration with industry-standard SOC platforms (Splunk, EL
 
 ---
 
-## 📋 Requirements (Mandatory)
+##  Requirements (Mandatory)
 
 - Python 3.12+
 - Google Gemini 3 API key (MANDATORY)
@@ -288,7 +288,7 @@ JSON output enables integration with industry-standard SOC platforms (Splunk, EL
 
 ---
 
-## 📁 Project Structure (Clean & Simple)
+##  Project Structure (Clean & Simple)
 
 ```
 ghostshell-guardian/
@@ -333,7 +333,7 @@ cat outputs/shellshock_enriched.json
 
 ---
 
-## 🎯 Key Takeaways for Judges
+##  Key Takeaways for Judges
 
 | Aspect | Why It's Good |
 |--------|---------------|
@@ -373,7 +373,7 @@ A: Gemini 3 API pricing varies. Check Google Cloud pricing. Budget ~$0.01-0.05 p
 
 ---
 
-## 🏆 Credits
+##  Credits
 
 Built for hackathon. Uses:
 - **Google Gemini 3 API** (enrichment)
@@ -381,5 +381,4 @@ Built for hackathon. Uses:
 - **Standard libraries** (no unnecessary dependencies)
 
 ---
-
-**Ready to impress judges? Run `python src/main.py` and watch Ghost Shell Guardian turn raw alerts into actionable intelligence.** 🚀
+Run `python src/main.py` and watch Ghost Shell Guardian turn raw alerts into actionable intelligence.** 🚀
