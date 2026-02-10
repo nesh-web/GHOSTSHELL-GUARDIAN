@@ -179,25 +179,6 @@ Ghost Shell Guardian automates expert-level threat analysis for overwhelmed SOC 
 
 ---
 
-## Questions Judges Might Ask
-
-**Q: Real market demand for this?**
-A: Yes. Every enterprise SOC faces alert fatigue. This is standard challenge.
-
-**Q: Why Gemini 3 vs. GPT-4?**
-A: Gemini 3 is newer (2024-2025), has better security context, cheaper, more reliable JSON.
-
-**Q: Is JSON output really enough?**
-A: Yes. Industry standard for tool integration (Splunk, ELK, Datadog all accept JSON).
-
-**Q: How much does this cost?**
-A: Gemini 3 API ~$0.01-0.05 per alert. Budget friendly for enterprise adoption.
-
-**Q: Can it be deployed today?**
-A: Yes. Complete 4-layer system, ready to integrate with existing SOC tools.
-
----
-
 **Status:** Production-ready SOC platform with first-mover advantage in Gemini 3 security integration.
 
 **Pitch:** Innovation, execution, market relevance, professional quality — all delivered.
