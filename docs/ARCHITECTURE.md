@@ -295,7 +295,7 @@ outputs/shellshock_enriched.json
 
 ---
 
-## Interview Questions & Answers
+## Questions & Answers
 
 **Q: Why not use machine learning for detection?**
 A: "Signature-based detection is industry-standard for known threats. ML is more expensive and harder to explain to analysts. For zero-day detection, ML is future work."
@@ -362,4 +362,4 @@ Ghost Shell Guardian is a **clean, simple, production-focused** architecture tha
 - ✅ Has professional error handling
 - ✅ Is easy to extend and maintain
 
-**For judges**: "This is a complete end-to-end system showing full understanding of security, AI, and software architecture."
+
